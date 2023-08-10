@@ -448,7 +448,8 @@ def webui():
 
         try:
             while True:
-                server_command = shared.state.wait_for_server_command(timeout=5)
+                # server_command = shared.state.wait_for_server_command(timeout=5)
+                server_command = "stop"
                 if server_command:
                     if server_command in ("stop", "restart"):
                         break
